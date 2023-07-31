@@ -7,8 +7,8 @@ export default function App() {
   return (
     <div className="App">
       <h1>Login</h1>
-      <input type="text" placeholder="User Name" />
-      <input type={isShown ? "text" : "password"} placeholder="Password" />
+      <input type="text" placeholder="User Name"  required/>
+      <input type={isShown ? "text" : "password"} placeholder="Password" required min="6"/>
       <button className="icon" onClick={() => setIsShown(!isShown)}>
         {!isShown ? "😃" : "😵"}
       </button>
